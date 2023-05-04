@@ -1,0 +1,36 @@
+
+.card-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.card-result{
+    @include shadows;
+    
+    position: relative;
+    
+    margin: 0 auto;
+    padding: 1rem;
+
+    width: 40rem;
+
+    background: $white;
+    
+    text-align: center;
+
+    border-radius: 1rem;
+}
+.card-word,
+.card-translate{
+    padding: .8rem;
+
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.card-word{
+    color: $color-word;
+}
+.card-translate{
+    color: $color-translate;
+}

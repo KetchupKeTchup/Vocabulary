@@ -1,0 +1,43 @@
+.nav{
+    position: relative;
+}
+
+.nav-conteiner{
+    display: flex;
+    gap: 3rem;
+}
+.nav-link{
+    position: relative;
+    
+    display: inline-block;
+
+    font-size: $font-size-link;
+    font-weight: 600;
+
+    // overflow: hidden;
+
+    transition: linear .2s;
+
+    &::after{
+        content: "";
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        
+        width: 0;
+        height: 2px;
+
+        transition: all linear .2s;
+
+        background-color: $blue;
+    }
+
+    &:hover{
+        color: $blue;
+        
+        &::after{
+            width: 100%;
+        }
+    }    
+}

@@ -1,0 +1,91 @@
+.article{
+    position: relative;
+    margin: 4rem 0;
+    
+}
+.article-colums{
+    display: flex;
+    justify-content: space-around;
+}
+.article-colum{
+    padding: 0 1.2rem;
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    
+    // text-align: justify;
+}
+.article-text{
+    position: relative;
+
+    font-size: 1.4rem;
+
+    &__ua{
+        display: none;
+    }
+}
+.article-text__active{
+    
+    .article-text__ua{
+        display: block;
+    }
+    
+    .article-text__sk{
+        display: none;
+    }
+
+    .article-description{
+        display: none;
+    }
+    .article-description__ua{
+        display: block;
+    }
+}
+
+.article-subtitle{
+    color: $color-translate;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.article-description,
+.article-description__ua{
+    margin: 0 1rem 1rem 1rem;
+
+    position: relative;
+
+    font-size: 1.8rem;
+    font-family: 'Ubuntu';
+    font-weight: 600;
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -1.2rem;
+
+        width: .7rem;
+        height: 100%;
+
+        background-color: $blue;
+        opacity: .6;
+    }
+
+    &__ua{
+        display: none;
+    }
+}
+
+.artickle-abzac{
+    display: block;
+    text-indent: 1.5rem;
+}
+
+
+
+
+//--------------------------------------------
+

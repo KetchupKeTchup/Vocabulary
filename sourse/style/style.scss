@@ -1,0 +1,25 @@
+@import "mixins";
+@import "reset";
+@import "vars";
+@import "conteiner";
+
+@import "header";
+@import "nav";
+@import "main";
+@import "forms";
+@import "input";
+@import "card";
+
+@import "styleArticles/title";
+@import "styleArticles/article";
+
+@import "buttons";
+
+html{
+    font-size: 16px;
+    font-family: 'Roboto','Ubuntu', sans-serif;
+    color: #fff;
+    
+    background: $main-background-color;  
+}
+

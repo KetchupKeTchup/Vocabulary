@@ -1,8 +1,11 @@
-
+.card{
+    width: 50%;
+}
 .card-inner{
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
 }
 .card-result{
     @include shadows;

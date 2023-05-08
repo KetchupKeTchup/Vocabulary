@@ -1,21 +1,15 @@
 .article{
-    position: relative;
-    margin: 4rem 0;
-    
-}
-.article-colums{
+    width: 100%;
+        
     display: flex;
-    justify-content: space-around;
-}
-.article-colum{
-    padding: 0 1.2rem;
-    width: 30%;
-
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
+    justify-content: center;
     
-    // text-align: justify;
+    margin-bottom: 3rem;
+}
+.article__title{
+    font-size: 3rem;
+    font-family: $fontTitle;
+    font-weight: 400;
 }
 .article-text{
     position: relative;
@@ -23,25 +17,42 @@
     font-size: 1.5rem;
     font-family: $fontText;
 
-    // border-bottom: 2px solid #999;
-
-    // &::after{
-    //     content: "";
-        
-    //     width: 100%;
-    //     height: 2px;
-        
-    //     background-color: #999;
-        
-    //     position: absolute;
-    //     bottom: -1rem;
-    //     left: 0;
-    // }
-
     &__ua{
         display: none;
     }
 }
+.article__photo{
+    margin: 0 auto;
+    position: relative;
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article__img{
+    width: 70rem;
+    height: 40rem;
+}
+
+.article__content{
+    width: 60%;
+    margin: 0 auto;
+}
+.article__paragraph{
+    margin: 4.2rem 0;
+}
+.article__title__paragraph{
+    margin-bottom: 1rem;
+    
+    font-weight: 400;
+    font-size: 2.2rem;
+    font-family: $fontText;
+    
+    text-decoration: underline;
+}
+
 .article-text__active{
     
     .article-text__ua{
@@ -65,10 +76,6 @@
     font-family: 'Ubuntu';
     font-weight: 700;
     font-size: 1.8rem;
-
-    &__orange{
-        color: $orange;
-    }
 }
 
 .article-description,
@@ -82,52 +89,15 @@
     font-size: 1.8rem;
     font-family: 'Ubuntu';
     font-weight: 600;
-
-    &::after{
-        content: "";
-        position: absolute;
-        top: 0;
-        left: -1.2rem;
-
-        width: .4rem;
-        height: 100%;
-
-        background-color: $blue;
-        opacity: .6;
-    }
-
-    &__us{
-        &::after{
-            background-color: $orange;
-        }
-    }
+    @include blue;
 
     &__ua{
         display: none;
     }
 }
-
-.artickle-abzac{
-    display: block;
-    text-indent: 1.5rem;
-}
-
-.article-second{
-    margin: 5rem 0 3rem 5rem;
-    padding: 0 1rem;
-    
-    width: 60%;
-}
 .article-block{
     display: block;
-
     &__mt{
         margin-top: 1rem;
     }
 }
-
-
-
-
-//--------------------------------------------
-

@@ -6,30 +6,31 @@
     text-transform: uppercase;
     letter-spacing: 2px;
 
-    color: $white;
+    color: $black;
     
     background-color: inherit;
     border: none;
     outline: none;
 
+    cursor: pointer;
+
 }
 
 .button-btn{
-    padding: .6rem 2.5rem;
+    padding: .4rem 2rem;
 
-    background: rgba(255,255,255, .6);
-    border-radius: 3rem;
+    background: rgba(255,255,255, 1);
+    border-radius: 1.2rem;
 
-    color: $white;
+    color: $black;
 
-    box-shadow: 0 2px 8px #999;
+    box-shadow: 0 2px 8px $blue;
 
     transition: all linear .2s;
 
     &:hover{
-        color: rgba(255,255,255, 1);
         
-        box-shadow: 0 0 12px rgb(236, 230, 230);
+        box-shadow: 0 0 12px $blue;
     }
 }
 

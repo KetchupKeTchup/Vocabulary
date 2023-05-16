@@ -1,15 +1,26 @@
 .article{
     width: 100%;
-        
-    display: flex;
-    justify-content: center;
-    
     margin-bottom: 3rem;
 }
-.article__title{
+.article-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.article-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.article__title,
+.article__title__ua{
     font-size: 3rem;
     font-family: $fontTitle;
     font-weight: 400;
+
+    &__ua{
+        display: none;
+    }
 }
 .article-text{
     position: relative;
@@ -43,7 +54,8 @@
 .article__paragraph{
     margin: 4.2rem 0;
 }
-.article__title__paragraph{
+.article__title__paragraph-us,
+.article__title__paragraph-ua{
     margin-bottom: 1rem;
     
     font-weight: 400;
@@ -52,6 +64,9 @@
     
     text-decoration: underline;
 }
+.article__title__paragraph-ua{
+    display: none;
+}
 
 .article-text__active{
     
@@ -59,7 +74,8 @@
         display: block;
     }
     
-    .article-text__sk{
+    .article-text__sk,
+    .article-text__us{
         display: none;
     }
 
@@ -67,6 +83,18 @@
         display: none;
     }
     .article-description__ua{
+        display: block;
+    }
+    .article__title{
+        display: none;
+    }
+    .article__title__ua{
+        display: block;
+    }
+    .article__title__paragraph-us{
+        display: none;
+    }
+    .article__title__paragraph-ua{
         display: block;
     }
 }

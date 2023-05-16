@@ -51,19 +51,19 @@ btnDelList.forEach(function(btnDel) {
 });
 
 function displayMessageWord(){ // виводим верстку на екран
-    let displayMessage = '';
-    
-    dictionaryList.forEach(function(item){
-      displayMessage += `
-        <div class="card-result">
-          <div class="card-word">${item.word}</div>
-          <div class="card-translate">${item.translate}</div>
-          <button class="btn btn-del" id="btn-del">Delete</button>
-        </div>
-      `;
-    });
-    output.innerHTML = displayMessage;
-  }
+  let displayMessage = '';
+  
+  dictionaryList.slice(-3).forEach(function(item){
+    displayMessage += `
+      <div class="card-result">
+        <div class="card-word">${item.word}</div>
+        <div class="card-translate">${item.translate}</div>
+        <button class="btn btn-del" id="btn-del">Delete</button>
+      </div>
+    `;
+  });
+  output.innerHTML = displayMessage;
+}
 // сохраняєм все на сторінкі
 
 btnSend.addEventListener('click', addWordInPage);

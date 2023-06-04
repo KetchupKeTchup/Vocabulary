@@ -35,7 +35,7 @@ if (localStorage.getItem('dictionaryList')) {
     dictionaryList = JSON.parse(localStorage.getItem('dictionaryList'));
     displayMessageWord(); // виводимо на сторінку збережені дані
 }
-// зроблено за допомого ChatGPT
+
 function deleteElement() {
     let card = this.parentNode;
     let index = Array.prototype.indexOf.call(card.parentNode.children, card);
@@ -49,6 +49,12 @@ let btnDelList = document.querySelectorAll(".btn-del");
 btnDelList.forEach(function(btnDel) {
     btnDel.addEventListener("click", deleteElement);
 });
+
+const showAllList = function(){
+    let storage = [...dictionaryList];
+    console.log(storage);
+
+}
 
 function displayMessageWord(){ // виводим верстку на екран
   let displayMessage = '';
@@ -65,8 +71,4 @@ function displayMessageWord(){ // виводим верстку на екран
   output.innerHTML = displayMessage;
 }
 // сохраняєм все на сторінкі
-
 btnSend.addEventListener('click', addWordInPage);
-
-
-

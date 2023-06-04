@@ -1,6 +1,12 @@
 .card{
     width: 50%;
 }
+.card-conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.8rem;
+}
 .card-inner{
     display: flex;
     flex-direction: column;

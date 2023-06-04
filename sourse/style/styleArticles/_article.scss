@@ -40,11 +40,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    margin-bottom: 2rem;
 }
 
 .article__img{
     width: 70rem;
     height: 40rem;
+
+    border-radius: 1rem;
+
 }
 
 .article__content{
